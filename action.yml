@@ -14,6 +14,9 @@ inputs:
   service:
     description: 'service file path'
     required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
 
 # Ref: https://haya14busa.github.io/github-action-brandings/
 # TODO: update branding if you want.
