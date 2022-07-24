@@ -1,37 +1,19 @@
 name: 'build-rpm-action'
 description: 'Build rpm package.'
-author: 'jiro4989'
+author: 'M1Screw'
 inputs:
-  summary:
-    description: 'Package summary.'
+  bin:
+    description: 'binary file path'
     required: true
-  package:
-    description: 'Package name of rpm package.'
+  spec:
+    description: 'spec file path'
     required: true
-  package_root:
-    description: 'Directory of release files.'
+  config:
+    description: 'config file path'
     required: true
-  maintainer:
-    description: 'Package maintainer name.'
+  service:
+    description: 'service file path'
     required: true
-  vendor:
-    description: 'Package vendor.'
-    default: ''
-  version:
-    description: 'Package version.'
-    required: true
-  arch:
-    description: 'Package architecture.'
-    default: 'x86_64'
-  desc:
-    description: 'Package description.'
-    default: ''
-  license:
-    description: 'Package LICENSE.'
-    default: 'MIT'
-runs:
-  using: 'docker'
-  image: 'docker://jiro4989/build-rpm-action:2.1.0'
 
 # Ref: https://haya14busa.github.io/github-action-brandings/
 # TODO: update branding if you want.
