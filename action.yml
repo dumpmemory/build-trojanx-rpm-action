@@ -1,5 +1,5 @@
-name: 'build-rpm-action'
-description: 'Build rpm package.'
+name: 'build-trojanx-rpm-action'
+description: 'Build TrojanX rpm package.'
 author: 'M1Screw'
 inputs:
   bin:
